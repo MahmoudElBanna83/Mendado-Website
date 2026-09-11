@@ -27,7 +27,7 @@ button,input,select,textarea{font:inherit}
   background:linear-gradient(180deg,rgba(3,3,2,.96),rgba(3,3,2,.68));
   backdrop-filter:blur(16px);border-bottom:1px solid rgba(203,162,83,.14)
 }
-.brand img{width:118px;height:64px;object-fit:contain;object-position:left center}
+.brand img{width:138px;height:68px;object-fit:contain;object-position:left center}
 .main-nav{display:flex;justify-content:center;align-items:center;gap:clamp(16px,2vw,32px)}
 .main-nav a{font-size:13px;color:rgba(255,250,240,.85);transition:.25s}
 .main-nav a:hover{color:var(--gold-2)}
@@ -198,3 +198,13 @@ footer{display:grid;grid-template-columns:240px 1fr 300px;gap:50px;align-items:e
   .application-grid{grid-template-columns:1fr}
   .field-row{grid-template-columns:1fr}
 }
+
+/* V2 refinement */
+.private-label{background:radial-gradient(circle at 82% 10%,rgba(128,78,18,.12),transparent 26%),#080806}
+.journey-grid{border-top:1px solid var(--line)}
+.journey-step{display:grid;grid-template-columns:80px 1fr 1.2fr;gap:28px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line)}
+.journey-step>span{font-family:var(--serif);font-size:31px;color:var(--gold)}
+.journey-step h3{font-family:var(--serif);font-size:30px;font-weight:500;margin:0}
+.journey-step p{margin:0;color:rgba(255,250,240,.62);font-size:14px;max-width:560px}
+@media(max-width:860px){.journey-step{grid-template-columns:56px 1fr}.journey-step p{grid-column:2}}
+@media(max-width:560px){.brand img{width:118px}.journey-step h3{font-size:26px}}
