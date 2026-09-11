@@ -9,23 +9,19 @@
   <meta property="og:title" content="MENDADO | Food. Business. Global.">
   <meta property="og:description" content="Integrated B2B solutions across food ingredients, manufacturing, global supply and business development.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/og-preview.jpg">
-  <link rel="icon" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <!-- MENDADO V4 Visual Refinement -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="MENDADO home">
-      <img src="assets/mendado-logo.webp" alt="MENDADO logo" />
+      <img src="assets/concept-logo.webp" alt="MENDADO" />
     </a>
 
     <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
-      <span></span><span></span>
-      <span class="sr-only">Toggle navigation</span>
+      <span></span><span></span><span class="sr-only">Toggle navigation</span>
     </button>
 
     <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
@@ -39,105 +35,75 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <a class="header-cta" href="#contact">Request a Quote</a>
+    <div class="header-actions">
+      <span class="search-icon" aria-hidden="true"></span>
+      <a class="header-cta" href="#contact">Request a Quote <span>→</span></a>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-glow"></div>
-      <div class="hero-copy reveal">
-        <div class="eyebrow">FOOD · BUSINESS · GLOBAL</div>
-        <h1>From Ingredients to<br>Global Opportunities.</h1>
-        <div class="gold-rule"></div>
-        <p>Mendado connects food ingredients, manufacturing capabilities, global supply and business expertise to help companies develop, source and grow across markets.</p>
+    <section class="concept-hero" id="solutions">
+      <div class="concept-hero-image" aria-hidden="true"></div>
+      <div class="concept-shade" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-kicker">TRUSTED INGREDIENTS · STRONGER BUSINESSES · A BRIGHTER TOMORROW</div>
+        <h1>From Ingredients to<br><em>Global Opportunities.</em></h1>
+        <p>Mendado connects high-quality food ingredients, manufacturing capabilities, global supply and business expertise to help companies develop, source and grow across local and international markets.</p>
+
         <div class="hero-actions">
-          <a class="btn btn-gold" href="#products">Explore Our Products <span>→</span></a>
-          <a class="btn btn-outline" href="#solutions">Explore Solutions</a>
-          <a class="hero-text-link" href="#business">Explore Business Solutions <span>→</span></a>
+          <a class="btn primary" href="#products">Explore Our Products <span>→</span></a>
+          <a class="btn outline" href="#solutions-band">Explore Solutions</a>
+          <a class="btn outline" href="#business">Explore Business Solutions</a>
         </div>
       </div>
 
-      <div class="hero-visual reveal">
-        <div class="hero-image-wrap">
-          <img src="assets/hero-food.webp" alt="Premium food ingredients" />
-        </div>
-        <div class="hero-note">
-          <span>FOOD · BUSINESS · GLOBAL</span>
-          <em>More than ingredients.<br>A stronger future.</em>
-        </div>
-      </div>
-
-      <div class="hero-pillars">
-        <div><b>01</b><span>Food & Ingredients</span></div>
-        <div><b>02</b><span>Manufacturing</span></div>
-        <div><b>03</b><span>Global Supply</span></div>
-        <div><b>04</b><span>Business Growth</span></div>
+      <div class="hero-origin-note">
+        <span class="origin-leaf">◒</span>
+        <div>EGYPTIAN ORIGINS<br>GLOBAL MARKETS<br>A STRONGER TOMORROW</div>
       </div>
     </section>
 
-    <section class="section light" id="solutions">
-      <div class="section-head reveal">
-        <div>
-          <span class="eyebrow dark">What we do</span>
-          <h2>One Platform.<br>Multiple Solutions.</h2>
-        </div>
-        <p>Mendado brings together food industry expertise, selected manufacturing capabilities, international trade and business solutions under one platform — helping businesses source, develop and grow with confidence.</p>
-      </div>
-
-      <div class="solution-grid">
-        <article class="solution-card reveal">
-          <span class="num">01</span><span class="icon">◒</span>
-          <h3>Food & Ingredients</h3>
-          <p>Quality ingredients and customized solutions for food manufacturers, brands and professional users.</p>
-        </article>
-        <article class="solution-card reveal">
-          <span class="num">02</span><span class="icon">⚙</span>
-          <h3>Manufacturing</h3>
-          <p>Processing, blending and packing solutions focused on consistency, quality and scalability.</p>
-        </article>
-        <article class="solution-card reveal">
-          <span class="num">03</span><span class="icon">◎</span>
-          <h3>Global Supply</h3>
-          <p>Connecting products and businesses with international markets through sourcing, trade and export solutions.</p>
-        </article>
-        <article class="solution-card reveal">
-          <span class="num">04</span><span class="icon">▥</span>
-          <h3>Business Solutions</h3>
-          <p>Selected strategic services supporting business development, market growth and commercial opportunities.</p>
-        </article>
-      </div>
+    <section class="solutions-band" id="solutions-band">
+      <article>
+        <div class="pillar-top"><b>01</b><span class="pillar-icon">⌁</span></div>
+        <h3>FOOD &amp; INGREDIENTS</h3>
+        <p>Premium quality ingredients<br>for a better food industry.</p>
+      </article>
+      <article>
+        <div class="pillar-top"><b>02</b><span class="pillar-icon">⚙</span></div>
+        <h3>MANUFACTURING<br>NETWORK &amp; EXPERTISE</h3>
+        <p>Reliable processing, blending<br>and packing solutions.</p>
+      </article>
+      <article>
+        <div class="pillar-top"><b>03</b><span class="pillar-icon">♧</span></div>
+        <h3>GLOBAL SUPPLY</h3>
+        <p>From trusted origins<br>to global markets.</p>
+      </article>
+      <article>
+        <div class="pillar-top"><b>04</b><span class="pillar-icon">▥</span></div>
+        <h3>BUSINESS SOLUTIONS</h3>
+        <p>Strategic support<br>for sustainable growth.</p>
+      </article>
     </section>
 
-    <section class="section dark products" id="products">
-      <div class="section-head reveal">
+    <section class="products-concept" id="products">
+      <div class="products-heading">
         <div>
-          <span class="eyebrow gold">Our products</span>
-          <h2>Ingredients That Build<br>Better Products.</h2>
+          <span class="section-kicker">OUR PRODUCTS</span>
+          <h2>Ingredients That<br>Build Better Products.</h2>
         </div>
-        <p>Our portfolio is built around practical ingredients and food solutions for manufacturers, brands and professional users.</p>
+        <p>Our portfolio includes dehydrated ingredients, spices, herbs and customized food solutions for manufacturers, brands and professional users.</p>
+        <a href="#contact" class="view-all">View All Products <span>→</span></a>
       </div>
 
-      <div class="product-grid">
-        <a class="product-card reveal" href="#contact">
-          <img src="assets/dehydrated.webp" alt="Dehydrated ingredients" />
-          <span>Dehydrated Ingredients</span>
-        </a>
-        <a class="product-card reveal" href="#contact">
-          <img src="assets/spices.webp" alt="Spices and herbs" />
-          <span>Spices & Herbs</span>
-        </a>
-        <a class="product-card reveal" href="#contact">
-          <img src="assets/seasoning.webp" alt="Seasoning blends" />
-          <span>Seasoning Blends</span>
-        </a>
-        <a class="product-card reveal" href="#contact">
-          <img src="assets/bases.webp" alt="Food bases and mixes" />
-          <span>Food Bases & Mixes</span>
-        </a>
-        <a class="product-card reveal" href="#contact">
-          <img src="assets/custom.webp" alt="Custom ingredient solutions" />
-          <span>Custom Ingredients</span>
-        </a>
+      <div class="product-grid-concept">
+        <a class="concept-product" href="#contact"><img src="assets/product-dehydrated.webp" alt="Dehydrated ingredients"><span>Dehydrated Ingredients <b>→</b></span></a>
+        <a class="concept-product" href="#contact"><img src="assets/product-spices.webp" alt="Spices and herbs"><span>Spices &amp; Herbs <b>→</b></span></a>
+        <a class="concept-product" href="#contact"><img src="assets/product-garlic-onion.webp" alt="Garlic and onion"><span>Garlic &amp; Onion <b>→</b></span></a>
+        <a class="concept-product" href="#contact"><img src="assets/product-bases.webp" alt="Food bases and mixes"><span>Food Bases &amp; Mixes <b>→</b></span></a>
+        <a class="concept-product" href="#contact"><img src="assets/product-pasta.webp" alt="Pasta and pizza solutions"><span>Pasta &amp; Pizza Solutions <b>→</b></span></a>
+        <a class="concept-product" href="#contact"><img src="assets/product-custom.webp" alt="Custom blends"><span>Custom Blends <b>→</b></span></a>
       </div>
     </section>
 
@@ -289,7 +255,8 @@
       <small>© <span id="year"></span> MENDADO. All rights reserved.</small>
     </div>
   </footer>
+  </main>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
