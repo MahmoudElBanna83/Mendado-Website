@@ -34,23 +34,27 @@
 
 - `V6-00` is complete.
 - `V6-01` was separately authorized and has been implemented on `feat/v6-recovery`.
-- `V6-02` and all later stages remain unauthorized.
+- `V6-02` was separately authorized and has been implemented on `feat/v6-recovery`.
+- `V6-03` and all later stages remain unauthorized.
 
-Permitted in `V6-01`:
+Completed in `V6-02`:
 
-- Correct invalid HTML structure.
-- Establish shared CSS design tokens and use approved gold `#E8C67A`.
-- Preserve the existing Hero image, composition, and exact headline.
-- Simplify the header navigation and remove the non-functional search control.
-- Preserve the responsive navigation behavior and existing approved assets.
-- Add only the verification documentation and evidence required for `V6-01`.
+- Preserve the approved V6-01 foundation, Hero, navigation, responsive logo and gold token.
+- Establish the approved ten-part homepage hierarchy.
+- Present Mendado, MND by Mendado and Mendado AgriHub as one connected ecosystem using text headings only.
+- Add the seven approved business areas and exact approved brand messages.
+- Describe manufacturing as coordinated through qualified partners.
+- Align navigation and calls to action with the V6 structure.
+- Keep the inquiry form presentational and unconnected.
+- Add only the verification documentation and evidence required for `V6-02`.
 
 Still prohibited:
 
-- Start `V6-02` or later work.
-- Add the complete ecosystem, seven business areas, Arabic paths, or language switcher.
-- Implement or connect the inquiry form.
-- Add, recreate, or replace production logos or content imagery.
+- Start `V6-03` or later work.
+- Add or replace production logos.
+- Add Arabic paths, RTL behavior, or a language switcher.
+- Connect or redesign the inquiry form endpoint.
+- Modify or replace existing image assets.
 - Merge or rebase.
 - Deploy or publish.
 - Connect or change a domain.
