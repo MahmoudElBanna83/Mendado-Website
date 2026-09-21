@@ -207,6 +207,7 @@ button,input,select,textarea{font:inherit}
 .application-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #c9bda8;border-left:1px solid #c9bda8}
 .application-grid span{padding:29px 22px;border-right:1px solid #c9bda8;border-bottom:1px solid #c9bda8;font-family:var(--serif);font-size:24px}
 .contact-section{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;background:#080806}
+.contact-copy,.rfq-form{min-width:0}
 .contact-copy .form-status{margin-top:25px;color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:.1em}
 .rfq-form{display:grid;gap:15px;background:#100e0a;border:1px solid var(--line);padding:30px}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
