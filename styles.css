@@ -286,7 +286,7 @@ footer{display:grid;grid-template-columns:240px 1fr 300px;gap:45px;align-items:e
   .products-heading h2{font-size:42px}
   .product-grid-concept{grid-template-columns:1fr}
   .concept-product img{height:190px}
-  .intro-grid h2,.ecosystem-heading h2,.capabilities-heading h2,.feature-heading h2,.agrihub-panel h2{font-size:43px}
+  .intro-grid h2,.ecosystem-heading h2,.capabilities-heading h2,.feature-heading h2,.agrihub-panel h2,.contact-copy h2{font-size:43px}
   .value-strip,.capability-grid{grid-template-columns:1fr}
   .ecosystem-card{padding:27px;min-height:310px}
   .capability-card{min-height:225px}
