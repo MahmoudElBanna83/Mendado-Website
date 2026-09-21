@@ -30,22 +30,27 @@
 7. `V6-06` — QA and private review.
 8. `V6-07` — Approval gate.
 
-## Current authorization
+## Current stage status
 
-Only `V6-00` is authorized.
+- `V6-00` is complete.
+- `V6-01` was separately authorized and has been implemented on `feat/v6-recovery`.
+- `V6-02` and all later stages remain unauthorized.
 
-Permitted in this stage:
+Permitted in `V6-01`:
 
-- Record the verified repository and asset baseline.
-- Record Git object checksums.
-- Create the recovery branch from the approved baseline.
-- Add recovery documentation and implementation-control files.
-- Open a draft pull request for review.
+- Correct invalid HTML structure.
+- Establish shared CSS design tokens and use approved gold `#E8C67A`.
+- Preserve the existing Hero image, composition, and exact headline.
+- Simplify the header navigation and remove the non-functional search control.
+- Preserve the responsive navigation behavior and existing approved assets.
+- Add only the verification documentation and evidence required for `V6-01`.
 
-Not permitted in this stage:
+Still prohibited:
 
-- Modify `index.html`, `styles.css`, `script.js`, existing assets, or V5 behavior.
-- Start `V6-01` or later work.
+- Start `V6-02` or later work.
+- Add the complete ecosystem, seven business areas, Arabic paths, or language switcher.
+- Implement or connect the inquiry form.
+- Add, recreate, or replace production logos or content imagery.
 - Merge or rebase.
 - Deploy or publish.
 - Connect or change a domain.
