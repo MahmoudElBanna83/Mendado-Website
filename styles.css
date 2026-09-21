@@ -103,12 +103,55 @@ button,input,select,textarea{font:inherit}
 .concept-product b{color:var(--gold2);font-weight:500}
 .concept-product:hover img{transform:scale(1.035)}
 
-/* Existing below-fold sections, kept compatible */
+/* V6-02 corporate architecture */
 .section,.why-section,.contact-section{padding:92px 62px}
 .light{background:var(--ivory);color:var(--ink)}
 .dark{background:var(--black);color:var(--white)}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.2em;font-size:10px;font-weight:600;color:var(--gold2);margin-bottom:18px}
 .eyebrow:before{content:"";width:25px;height:1px;background:currentColor}
+.eyebrow.dark{color:#77521b}
+
+.corporate-intro{padding-bottom:64px}
+.intro-grid{display:grid;grid-template-columns:1fr .9fr;gap:90px;align-items:center}
+.intro-grid h2,.ecosystem-heading h2,.capabilities-heading h2,.feature-heading h2,.agrihub-panel h2{
+  font-family:var(--serif);font-size:58px;line-height:.95;margin:0;font-weight:600;letter-spacing:-.025em
+}
+.intro-copy{border-left:1px solid #c9b58c;padding-left:42px}
+.intro-copy p{color:#5f574b;line-height:1.75;margin:0 0 18px}
+.intro-copy .lead{font-family:var(--serif);font-size:24px;line-height:1.35;color:var(--ink)}
+.value-strip{display:grid;grid-template-columns:repeat(5,1fr);margin-top:62px;border-top:1px solid #c9b58c;border-left:1px solid #c9b58c}
+.value-strip span{padding:19px 14px;border-right:1px solid #c9b58c;border-bottom:1px solid #c9b58c;text-align:center;text-transform:uppercase;letter-spacing:.12em;font-size:10px}
+
+.ecosystem-section{padding:92px 62px;background:linear-gradient(135deg,#080806,#111008)}
+.ecosystem-heading{display:grid;grid-template-columns:.8fr 1fr;column-gap:65px;align-items:end;max-width:1150px;margin-bottom:50px}
+.ecosystem-heading .eyebrow{grid-column:1/-1}
+.ecosystem-heading p{margin:0;color:rgba(255,250,240,.7);line-height:1.75}
+.ecosystem-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.ecosystem-card{position:relative;min-height:390px;padding:34px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}
+.ecosystem-card:after{content:"";position:absolute;right:-75px;bottom:-75px;width:190px;height:190px;border:1px solid rgba(232,198,122,.13);border-radius:50%}
+.ecosystem-card.mnd:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:#7d7a42}
+.ecosystem-card.agrihub:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:#567553}
+.ecosystem-number{font-family:var(--serif);font-size:24px;color:var(--gold)}
+.brand-type{text-transform:uppercase;letter-spacing:.15em;font-size:9px;color:rgba(255,250,240,.55);margin:42px 0 12px}
+.ecosystem-card h3{font-family:var(--serif);font-size:38px;line-height:1;margin:0}
+.ecosystem-card h3 small{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.18em;text-transform:uppercase;margin-top:9px;color:var(--gold)}
+.ecosystem-card .brand-message{font-family:var(--serif);font-size:19px;color:var(--gold2);min-height:48px;margin:20px 0}
+.ecosystem-card>p:last-child{color:rgba(255,250,240,.68);font-size:13px;line-height:1.7;max-width:350px}
+
+.capabilities-section{padding-top:100px}
+.capabilities-heading{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:end;margin-bottom:48px}
+.capabilities-heading p{margin:0;color:#62594c;line-height:1.75}
+.capability-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #c7b58e;border-left:1px solid #c7b58e}
+.capability-card{padding:28px;min-height:265px;border-right:1px solid #c7b58e;border-bottom:1px solid #c7b58e;background:rgba(255,255,255,.16)}
+.capability-card>span{font-family:var(--serif);font-size:23px;color:#9c7025}
+.capability-card h3{font-family:var(--serif);font-size:27px;line-height:1.05;margin:38px 0 14px}
+.capability-card p{color:#655c4f;font-size:13px;line-height:1.6;margin:0}
+
+.mnd-feature{padding:92px 62px;background:linear-gradient(130deg,#090806,#121008);color:var(--white)}
+.feature-heading{display:grid;grid-template-columns:1fr .9fr;gap:80px;align-items:end;margin-bottom:42px}
+.feature-label{text-transform:uppercase;letter-spacing:.14em;font-size:9px;color:var(--gold);margin:0 0 14px}
+.feature-copy p{color:rgba(255,250,240,.7);line-height:1.7;margin:0 0 15px}
+.light-link{display:inline-block;margin-top:10px;color:var(--gold2)}
 .split-section{display:grid;grid-template-columns:1.05fr .95fr;min-height:580px}
 .split-image img{width:100%;height:100%;object-fit:cover}
 .split-copy{padding:82px 70px;display:flex;flex-direction:column;justify-content:center;background:var(--ivory);color:var(--ink)}
@@ -133,6 +176,18 @@ button,input,select,textarea{font:inherit}
 .global-copy p{color:rgba(255,250,240,.74);font-size:16px;line-height:1.7}
 .global-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
 .global-tags span{padding:9px 13px;border:1px solid var(--line);font-size:10px;text-transform:uppercase;letter-spacing:.09em}
+.trade-cta{margin-top:28px}
+
+.agrihub-feature{position:relative;overflow:hidden}
+.agrihub-feature:after{content:"";position:absolute;width:460px;height:460px;right:-220px;top:-230px;border:1px solid rgba(73,107,67,.22);border-radius:50%}
+.agrihub-panel{position:relative;z-index:1;display:grid;grid-template-columns:110px .9fr 1fr;gap:42px;align-items:center;border:1px solid #bcae91;padding:48px;background:rgba(255,255,255,.2)}
+.agrihub-mark{width:90px;height:90px;border:1px solid #6d805f;border-radius:50%;display:grid;place-items:center;position:relative}
+.agrihub-mark span{position:absolute;width:42px;height:1px;background:#6d805f;transform-origin:center}
+.agrihub-mark span:nth-child(1){transform:rotate(0deg)}
+.agrihub-mark span:nth-child(2){transform:rotate(60deg)}
+.agrihub-mark span:nth-child(3){transform:rotate(-60deg)}
+.agrihub-copy{border-left:1px solid #bcae91;padding-left:36px}
+.agrihub-copy p{color:#5e574a;line-height:1.7;margin:0 0 15px}
 .business-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#c7b58e;border:1px solid #c7b58e}
 .business-card{background:var(--ivory);padding:28px;min-height:240px}
 .business-card span{color:#a27625;font-family:var(--serif);font-size:21px}
@@ -152,15 +207,20 @@ button,input,select,textarea{font:inherit}
 .application-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #c9bda8;border-left:1px solid #c9bda8}
 .application-grid span{padding:29px 22px;border-right:1px solid #c9bda8;border-bottom:1px solid #c9bda8;font-family:var(--serif);font-size:24px}
 .contact-section{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;background:#080806}
+.contact-copy .form-status{margin-top:25px;color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:.1em}
 .rfq-form{display:grid;gap:15px;background:#100e0a;border:1px solid var(--line);padding:30px}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
 .rfq-form label{display:grid;gap:7px;font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:#c9b996}
 .rfq-form input,.rfq-form select,.rfq-form textarea{width:100%;background:#070705;border:1px solid rgba(203,162,83,.24);color:var(--white);padding:12px 13px;outline:none}
+.btn-gold{background:var(--gradient-gold);color:#0b0905;font-weight:600}
 footer{display:grid;grid-template-columns:240px 1fr 300px;gap:45px;align-items:end;padding:50px 62px;background:#020201;border-top:1px solid var(--line)}
 .footer-brand img{width:170px;height:110px;object-fit:contain;object-position:left center}
 .footer-brand p{color:var(--gold);font-size:10px;letter-spacing:.18em}
 .footer-links{display:flex;flex-wrap:wrap;gap:14px 25px}
 .footer-links a{font-size:12px;color:rgba(255,250,240,.62)}
+.footer-center{display:grid;gap:24px}
+.footer-ecosystem{display:flex;flex-wrap:wrap;gap:9px}
+.footer-ecosystem span{border:1px solid rgba(232,198,122,.22);padding:7px 10px;color:rgba(255,250,240,.52);font-size:9px;text-transform:uppercase;letter-spacing:.08em}
 .footer-end{text-align:right}
 .footer-end p{font-family:var(--serif);font-size:22px;color:var(--gold2)}
 .footer-end small{color:rgba(255,250,240,.4)}
@@ -171,8 +231,11 @@ footer{display:grid;grid-template-columns:240px 1fr 300px;gap:45px;align-items:e
   .site-header{grid-template-columns:260px 1fr auto;padding:0 30px}
   .brand img{width:245px}
   .main-nav{gap:16px}.main-nav a{font-size:14px}
+  .header-cta{padding:14px 17px;font-size:12px}
   .concept-hero{padding-left:36px;padding-right:36px}
   .solutions-band,.products-concept{padding-left:36px;padding-right:36px}
+  .capability-grid{grid-template-columns:repeat(2,1fr)}
+  .agrihub-panel{grid-template-columns:90px .9fr 1fr;padding:38px;gap:28px}
 }
 @media(max-width:900px){
   .site-header{height:var(--header-height-mobile);position:fixed;grid-template-columns:1fr auto auto;padding:0 20px;background:#070604}
@@ -193,6 +256,16 @@ footer{display:grid;grid-template-columns:240px 1fr 300px;gap:45px;align-items:e
   .products-heading{grid-template-columns:1fr;gap:18px}
   .product-grid-concept{grid-template-columns:repeat(2,1fr)}
   .section,.why-section,.contact-section{padding:70px 22px}
+  .corporate-intro{padding-bottom:55px}
+  .intro-grid,.ecosystem-heading,.capabilities-heading,.feature-heading{grid-template-columns:1fr;gap:25px}
+  .intro-copy{border-left:0;border-top:1px solid #c9b58c;padding:28px 0 0}
+  .value-strip{grid-template-columns:repeat(3,1fr);margin-top:42px}
+  .ecosystem-section,.mnd-feature{padding:70px 22px}
+  .ecosystem-grid{grid-template-columns:1fr}
+  .ecosystem-card{min-height:330px}
+  .global-section{padding:70px 22px;min-height:650px}
+  .agrihub-panel{grid-template-columns:80px 1fr;padding:30px 24px}
+  .agrihub-copy{grid-column:1/-1;border-left:0;border-top:1px solid #bcae91;padding:26px 0 0}
   .split-section{grid-template-columns:1fr}.split-image{height:360px}.split-copy{padding:60px 22px}
   .section-head{grid-template-columns:1fr;gap:20px}
   .business-grid{grid-template-columns:1fr 1fr}
@@ -212,6 +285,12 @@ footer{display:grid;grid-template-columns:240px 1fr 300px;gap:45px;align-items:e
   .products-heading h2{font-size:42px}
   .product-grid-concept{grid-template-columns:1fr}
   .concept-product img{height:190px}
+  .intro-grid h2,.ecosystem-heading h2,.capabilities-heading h2,.feature-heading h2,.agrihub-panel h2{font-size:43px}
+  .value-strip,.capability-grid{grid-template-columns:1fr}
+  .ecosystem-card{padding:27px;min-height:310px}
+  .capability-card{min-height:225px}
+  .agrihub-panel{grid-template-columns:1fr}
+  .agrihub-mark{width:72px;height:72px}
   .journey-step{grid-template-columns:44px 1fr;gap:10px 16px}
   .journey-step p{grid-column:2}
   .business-grid,.why-grid,.application-grid,.field-row{grid-template-columns:1fr}
