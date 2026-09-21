@@ -20,5 +20,16 @@
   <iframe src="../../../ar/index.html" title="Arabic 768 by 1024" data-language="ar" data-viewport="768" width="768" height="1024"></iframe>
   <iframe src="../../../ar/index.html" title="Arabic 390 by 844" data-language="ar" data-viewport="390" width="390" height="844"></iframe>
   <iframe src="../../../ar/index.html" title="Arabic 320 by 700" data-language="ar" data-viewport="320" width="320" height="700"></iframe>
+  <script>
+    const [language, viewport] = location.hash.slice(1).split('-');
+    const selected = document.querySelector(`iframe[data-language="${language}"][data-viewport="${viewport}"]`);
+    if (selected) {
+      document.querySelectorAll('iframe').forEach(frame => frame.hidden = frame !== selected);
+      selected.style.opacity = '1';
+      selected.style.pointerEvents = 'auto';
+      document.documentElement.style.minWidth = `${viewport}px`;
+      document.body.style.minWidth = `${viewport}px`;
+    }
+  </script>
 </body>
 </html>
