@@ -1,10 +1,10 @@
 # MENDADO Website V6-01 Structural Recovery — Verification Record
 
-Status: Implemented and verified on the draft recovery branch  
-Repository: `MahmoudElBanna83/Mendado-Website`  
-Branch: `feat/v6-recovery`  
-Verification date: 2026-09-21  
-Protected V5 baseline: `680f422f5d81b73cb525cd92a44ad7518835db10`  
+Status: Implemented and verified on the draft recovery branch
+Repository: `MahmoudElBanna83/Mendado-Website`
+Branch: `feat/v6-recovery`
+Verification date: 2026-09-21
+Protected V5 baseline: `680f422f5d81b73cb525cd92a44ad7518835db10`
 V6-00 starting head: `2ac11fcfe43bcb860214fdbdf7177a660c2f4a8a`
 
 ## Implemented scope
