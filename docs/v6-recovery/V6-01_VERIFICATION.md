@@ -58,6 +58,32 @@ V6-00 starting head: `2ac11fcfe43bcb860214fdbdf7177a660c2f4a8a`
 
 The test-only page `docs/v6-recovery/evidence/v6-01-mobile-preview.html` provides a fixed 390 × 844 verification frame. It is documentation evidence only and is not linked from the production website.
 
+## Limited visual-correction verification
+
+The V6-01 acceptance review identified two presentation issues and authorized a limited corrective patch.
+
+### Hero origin note
+
+- Direct inspection confirmed that `assets/hero-concept.webp` already contains the approved origin note: “EGYPTIAN ORIGINS / GLOBAL MARKETS / A STRONGER TOMORROW.”
+- The duplicate HTML `.hero-origin-note` overlay and its unused CSS were removed.
+- The approved Hero image was not edited, replaced, recompressed, or renamed.
+- Live 1440 × 900 verification confirmed zero `.hero-origin-note` overlays, one clean embedded origin note, the exact Hero headline, and no horizontal overflow.
+
+### Mobile header logo
+
+- The existing `assets/concept-logo.webp` asset was preserved unchanged.
+- Header-logo rendering now uses `object-fit: contain`, automatic height, and responsive maximum heights instead of `object-fit: cover`.
+- Live 390 × 844 verification confirmed the complete MENDADO wordmark and descriptor are visible with navigation closed and open.
+- The rendered mobile logo measured 175 × 49.84 px from the unchanged 337 × 96 px source image, with no cropping.
+
+### Corrective browser evidence
+
+- Desktop frame: 1440 × 900; no horizontal overflow; no page-origin console errors or warnings.
+- Mobile closed: 390 × 844; menu hidden; `aria-expanded="false"`; no horizontal overflow; no page-origin console errors or warnings.
+- Mobile open: 390 × 844; menu visible; `aria-expanded="true"`; all five navigation links present; no horizontal overflow; no page-origin console errors or warnings.
+- Test-only desktop frame: `docs/v6-recovery/evidence/v6-01-desktop-preview.html`. It renders the site internally at 1440 × 900 and is not linked from the production website.
+- Replacement screenshots were captured for the corrected desktop Hero, mobile Hero, and open mobile navigation states.
+
 ## Explicit exclusions retained
 
 - No V6-02 ecosystem or seven-area content was added.
