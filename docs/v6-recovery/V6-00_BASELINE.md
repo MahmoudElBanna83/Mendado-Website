@@ -1,14 +1,14 @@
 # MENDADO Website V6-00 Baseline Record
 
-Status: Verified and protected  
-Repository: `MahmoudElBanna83/Mendado-Website`  
-Authoritative branch: `main`  
-Verification date: 2026-09-21  
-Authorized baseline commit: `680f422f5d81b73cb525cd92a44ad7518835db10`  
-Commit message: `Add MENDADO V5 concept assets`  
-Commit signature: valid  
-V5 root tree: `af9813c5cd1e83e84eb69de9750f84f2d073cdbb`  
-Assets tree: `d50327c07993c69c5dd3a3be7d4c05b647b76bfe`  
+Status: Verified and protected
+Repository: `MahmoudElBanna83/Mendado-Website`
+Authoritative branch: `main`
+Verification date: 2026-09-21
+Authorized baseline commit: `680f422f5d81b73cb525cd92a44ad7518835db10`
+Commit message: `Add MENDADO V5 concept assets`
+Commit signature: valid
+V5 root tree: `af9813c5cd1e83e84eb69de9750f84f2d073cdbb`
+Assets tree: `d50327c07993c69c5dd3a3be7d4c05b647b76bfe`
 Inventory: 24 files (4 root files, 19 images, and one `.gitkeep`)
 
 ## Verification evidence
