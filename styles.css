@@ -19,6 +19,7 @@
   --transition-fast:200ms ease;
   --serif:"Cormorant Garamond",Georgia,serif;
   --sans:"Manrope",Arial,sans-serif;
+  --arabic:"Cairo",Tahoma,Arial,sans-serif;
   /* Compatibility aliases used throughout the preserved V5 layout. */
   --black:var(--color-black);
   --black2:var(--color-black-soft);
@@ -36,6 +37,9 @@ img{display:block;max-width:100%}
 a{text-decoration:none;color:inherit}
 button,input,select,textarea{font:inherit}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.skip-link{position:fixed;left:16px;top:-80px;z-index:100;background:var(--gold);color:#090806;padding:12px 18px;font-weight:600;transition:top var(--transition-fast)}
+.skip-link:focus{top:16px}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:4px}
 
 .site-header{
   height:var(--header-height);position:absolute;left:0;right:0;top:0;z-index:20;
@@ -48,7 +52,10 @@ button,input,select,textarea{font:inherit}
 .main-nav{display:flex;justify-content:center;gap:30px;align-items:center;white-space:nowrap}
 .main-nav a{font-family:var(--serif);font-size:16px;color:#fffaf2;transition:color var(--transition-fast)}
 .main-nav a:hover{color:var(--gold2)}
+.mobile-language{display:none}
 .header-actions{display:flex;align-items:center;gap:24px}
+.language-link{font-family:var(--arabic);font-size:13px;color:var(--gold2);border-bottom:1px solid transparent;padding-bottom:3px}
+.language-link:hover{border-color:currentColor}
 .header-cta{background:var(--gradient-gold);color:#0b0905;padding:16px 24px;font-weight:600;font-size:14px;white-space:nowrap}
 .menu-toggle{display:none}
 
@@ -137,6 +144,9 @@ button,input,select,textarea{font:inherit}
 .ecosystem-card h3 small{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.18em;text-transform:uppercase;margin-top:9px;color:var(--gold)}
 .ecosystem-card .brand-message{font-family:var(--serif);font-size:19px;color:var(--gold2);min-height:48px;margin:20px 0}
 .ecosystem-card>p:last-child{color:rgba(255,250,240,.68);font-size:13px;line-height:1.7;max-width:350px}
+.ecosystem-logo{width:100%;height:145px;object-fit:contain;object-position:left center;margin:2px 0 18px}
+.ecosystem-logo-mnd{max-width:245px}
+.ecosystem-logo-agrihub{max-width:275px}
 
 .capabilities-section{padding-top:100px}
 .capabilities-heading{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:end;margin-bottom:48px}
@@ -150,6 +160,9 @@ button,input,select,textarea{font:inherit}
 .mnd-feature{padding:92px 62px;background:linear-gradient(130deg,#090806,#121008);color:var(--white)}
 .feature-heading{display:grid;grid-template-columns:1fr .9fr;gap:80px;align-items:end;margin-bottom:42px}
 .feature-label{text-transform:uppercase;letter-spacing:.14em;font-size:9px;color:var(--gold);margin:0 0 14px}
+.feature-brand-logo{display:block;width:100%;object-fit:contain;object-position:left center;margin-bottom:18px}
+.mnd-brand-logo{max-width:370px;max-height:250px}
+.agrihub-brand-logo{max-width:430px;max-height:280px}
 .feature-copy p{color:rgba(255,250,240,.7);line-height:1.7;margin:0 0 15px}
 .light-link{display:inline-block;margin-top:10px;color:var(--gold2)}
 .split-section{display:grid;grid-template-columns:1.05fr .95fr;min-height:580px}
@@ -180,7 +193,7 @@ button,input,select,textarea{font:inherit}
 
 .agrihub-feature{position:relative;overflow:hidden}
 .agrihub-feature:after{content:"";position:absolute;width:460px;height:460px;right:-220px;top:-230px;border:1px solid rgba(73,107,67,.22);border-radius:50%}
-.agrihub-panel{position:relative;z-index:1;display:grid;grid-template-columns:110px .9fr 1fr;gap:42px;align-items:center;border:1px solid #bcae91;padding:48px;background:rgba(255,255,255,.2)}
+.agrihub-panel{position:relative;z-index:1;display:grid;grid-template-columns:.9fr 1fr;gap:42px;align-items:center;border:1px solid #bcae91;padding:48px;background:rgba(255,255,255,.2)}
 .agrihub-mark{width:90px;height:90px;border:1px solid #6d805f;border-radius:50%;display:grid;place-items:center;position:relative}
 .agrihub-mark span{position:absolute;width:42px;height:1px;background:#6d805f;transform-origin:center}
 .agrihub-mark span:nth-child(1){transform:rotate(0deg)}
@@ -209,11 +222,13 @@ button,input,select,textarea{font:inherit}
 .contact-section{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;background:#080806}
 .contact-copy,.rfq-form{min-width:0}
 .contact-copy .form-status{margin-top:25px;color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:.1em}
+.contact-copy .form-status a{text-decoration:underline;text-underline-offset:3px}
 .rfq-form{display:grid;gap:15px;background:#100e0a;border:1px solid var(--line);padding:30px}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
 .rfq-form label{display:grid;gap:7px;font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:#c9b996}
 .rfq-form input,.rfq-form select,.rfq-form textarea{width:100%;background:#070705;border:1px solid rgba(203,162,83,.24);color:var(--white);padding:12px 13px;outline:none}
 .btn-gold{background:var(--gradient-gold);color:#0b0905;font-weight:600}
+.submission-status{min-height:20px;margin:0;color:var(--gold2);font-size:12px;line-height:1.5}
 footer{display:grid;grid-template-columns:240px 1fr 300px;gap:45px;align-items:end;padding:50px 62px;background:#020201;border-top:1px solid var(--line)}
 .footer-brand img{width:170px;height:110px;object-fit:contain;object-position:left center}
 .footer-brand p{color:var(--gold);font-size:10px;letter-spacing:.18em}
@@ -228,6 +243,20 @@ footer{display:grid;grid-template-columns:240px 1fr 300px;gap:45px;align-items:e
 
 .reveal{opacity:1;transform:none}
 
+/* Arabic / RTL */
+html[dir="rtl"] body{font-family:var(--arabic);text-align:right}
+html[dir="rtl"] .brand img,html[dir="rtl"] .ecosystem-logo,html[dir="rtl"] .feature-brand-logo,html[dir="rtl"] .footer-brand img{object-position:right center}
+html[dir="rtl"] .hero-content{margin-left:auto}
+html[dir="rtl"] .concept-hero-image{left:0;right:auto}
+html[dir="rtl"] .concept-shade{background:linear-gradient(270deg,#090806 0%,rgba(9,8,6,.97) 33%,rgba(9,8,6,.65) 49%,rgba(9,8,6,.12) 72%,rgba(9,8,6,.18) 100%),linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.18))}
+html[dir="rtl"] .hero-content h1,html[dir="rtl"] .intro-grid h2,html[dir="rtl"] .ecosystem-heading h2,html[dir="rtl"] .capabilities-heading h2,html[dir="rtl"] .global-copy h2,html[dir="rtl"] .why-intro h2,html[dir="rtl"] .contact-copy h2{font-family:var(--arabic);letter-spacing:0;line-height:1.25}
+html[dir="rtl"] .hero-content p,html[dir="rtl"] .intro-copy .lead,html[dir="rtl"] .ecosystem-card h3,html[dir="rtl"] .brand-message,html[dir="rtl"] .capability-card h3,html[dir="rtl"] .btn,html[dir="rtl"] .footer-end p{font-family:var(--arabic)}
+html[dir="rtl"] .intro-copy{border-left:0;border-right:1px solid #c9b58c;padding-left:0;padding-right:42px}
+html[dir="rtl"] .agrihub-copy{border-left:0;border-right:1px solid #bcae91;padding-left:0;padding-right:36px}
+html[dir="rtl"] .eyebrow:before{order:2}
+html[dir="rtl"] .footer-end{text-align:left}
+html[dir="rtl"] .rfq-form input,html[dir="rtl"] .rfq-form select,html[dir="rtl"] .rfq-form textarea{text-align:right}
+
 @media(max-width:1180px){
   .site-header{grid-template-columns:260px 1fr auto;padding:0 30px}
   .brand img{width:245px}
@@ -236,7 +265,7 @@ footer{display:grid;grid-template-columns:240px 1fr 300px;gap:45px;align-items:e
   .concept-hero{padding-left:36px;padding-right:36px}
   .solutions-band,.products-concept{padding-left:36px;padding-right:36px}
   .capability-grid{grid-template-columns:repeat(2,1fr)}
-  .agrihub-panel{grid-template-columns:90px .9fr 1fr;padding:38px;gap:28px}
+  .agrihub-panel{grid-template-columns:.9fr 1fr;padding:38px;gap:28px}
 }
 @media(max-width:900px){
   .site-header{height:var(--header-height-mobile);position:fixed;grid-template-columns:1fr auto auto;padding:0 20px;background:#070604}
@@ -246,6 +275,7 @@ footer{display:grid;grid-template-columns:240px 1fr 300px;gap:45px;align-items:e
   .menu-toggle span:not(.sr-only){display:block;height:1px;background:white;margin:8px 0}
   .main-nav{position:absolute;top:var(--header-height-mobile);left:0;right:0;display:none;flex-direction:column;align-items:flex-start;background:#070604;padding:24px}
   .main-nav.open{display:flex}
+  .mobile-language{display:block;color:var(--gold2);font-family:var(--arabic)}
   .concept-hero{padding:120px 22px 40px;min-height:720px}
   .concept-hero-image{top:76px;width:100%;opacity:.58;background-position:62% center}
   .concept-shade{background:linear-gradient(180deg,rgba(7,6,4,.68),rgba(7,6,4,.96) 72%)}
@@ -265,7 +295,7 @@ footer{display:grid;grid-template-columns:240px 1fr 300px;gap:45px;align-items:e
   .ecosystem-grid{grid-template-columns:1fr}
   .ecosystem-card{min-height:330px}
   .global-section{padding:70px 22px;min-height:650px}
-  .agrihub-panel{grid-template-columns:80px 1fr;padding:30px 24px}
+  .agrihub-panel{grid-template-columns:1fr 1fr;padding:30px 24px}
   .agrihub-copy{grid-column:1/-1;border-left:0;border-top:1px solid #bcae91;padding:26px 0 0}
   .split-section{grid-template-columns:1fr}.split-image{height:360px}.split-copy{padding:60px 22px}
   .section-head{grid-template-columns:1fr;gap:20px}
@@ -274,6 +304,8 @@ footer{display:grid;grid-template-columns:240px 1fr 300px;gap:45px;align-items:e
   .application-grid{grid-template-columns:1fr 1fr}
   .contact-section{grid-template-columns:1fr}
   footer{grid-template-columns:1fr;padding:45px 22px}.footer-end{text-align:left}
+  html[dir="rtl"] .intro-copy{border-right:0;border-top:1px solid #c9b58c;padding:28px 0 0}
+  html[dir="rtl"] .agrihub-copy{grid-column:1/-1;border-right:0;border-top:1px solid #bcae91;padding:26px 0 0}
 }
 @media(max-width:560px){
   .brand img{width:175px}
@@ -295,4 +327,9 @@ footer{display:grid;grid-template-columns:240px 1fr 300px;gap:45px;align-items:e
   .journey-step{grid-template-columns:44px 1fr;gap:10px 16px}
   .journey-step p{grid-column:2}
   .business-grid,.why-grid,.application-grid,.field-row{grid-template-columns:1fr}
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
 }

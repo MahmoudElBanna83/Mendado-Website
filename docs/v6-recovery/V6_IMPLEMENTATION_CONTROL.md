@@ -35,7 +35,8 @@
 - `V6-00` is complete.
 - `V6-01` was separately authorized and has been implemented on `feat/v6-recovery`.
 - `V6-02` was separately authorized and has been implemented on `feat/v6-recovery`.
-- `V6-03` and all later stages remain unauthorized.
+- `V6-03` through `V6-06` were authorized as pre-publication completion work and implemented on `feat/v6-recovery`.
+- `V6-07` remains the final approval gate. Merge and publication remain unauthorized.
 
 Completed in `V6-02`:
 
@@ -48,13 +49,15 @@ Completed in `V6-02`:
 - Keep the inquiry form presentational and unconnected.
 - Add only the verification documentation and evidence required for `V6-02`.
 
-Still prohibited:
+Completed after `V6-02`:
 
-- Start `V6-03` or later work.
-- Add or replace production logos.
-- Add Arabic paths, RTL behavior, or a language switcher.
-- Connect or redesign the inquiry form endpoint.
-- Modify or replace existing image assets.
+- `V6-03`: integrated separate MND and Mendado AgriHub identity assets derived from the approved brand-family board.
+- `V6-04`: added explicit English and Arabic paths, language navigation, Arabic content and RTL behavior.
+- `V6-05`: made the inquiry form functional through a prepared-email workflow addressed to `Development@mendado.com`, without adding a third-party processor or secret.
+- `V6-06`: completed structural, asset, link, language, JavaScript and diff validation; recorded the required final real-browser review.
+
+Still prohibited without final approval:
+
 - Merge or rebase.
 - Deploy or publish.
 - Connect or change a domain.
