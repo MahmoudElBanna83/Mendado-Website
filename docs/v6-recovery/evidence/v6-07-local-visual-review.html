@@ -45,7 +45,7 @@
       };
 
       selected.addEventListener('load', () => setTimeout(fitViewport, 250), { once: true });
-      if (selected.contentDocument.readyState === 'complete') setTimeout(fitViewport, 250);
+      setTimeout(fitViewport, 250);
     }
   </script>
 </body>
