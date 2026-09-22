@@ -41,9 +41,7 @@
         document.documentElement.dataset.reviewViewport = selected.contentWindow.innerWidth;
 
         fitAttempts += 1;
-        if (fitAttempts < 4 && selected.contentWindow.innerWidth !== targetWidth) {
-          setTimeout(fitViewport, 100);
-        }
+        if (fitAttempts < 20) setTimeout(fitViewport, 250);
       };
 
       selected.addEventListener('load', () => setTimeout(fitViewport, 250), { once: true });
