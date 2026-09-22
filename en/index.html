@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&amp;family=Cormorant+Garamond:wght@500;600&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=6-06" />
+  <link rel="stylesheet" href="../styles.css?v=6-08" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -49,8 +49,9 @@
 
       <div class="hero-content">
         <div class="hero-kicker">FOOD · BUSINESS · GLOBAL</div>
-        <h1 id="hero-title">From Ingredients to<br> <em>Global Opportunities.</em></h1>
-        <p>Mendado connects products, markets, expertise and digital innovation to create practical opportunities across food, agriculture and international business.</p>
+        <h1 id="hero-title"><span>An Integrated Ecosystem</span><em>Advancing Food and Agriculture.</em><span>Enabling Business. Creating Global Opportunities.</span></h1>
+        <p class="hero-slogan">Building Value. Connecting Markets. Creating Growth.</p>
+        <p class="hero-summary">Mendado connects products, markets, expertise and digital innovation to create practical opportunities across food, agriculture and international business.</p>
 
         <div class="hero-actions">
           <a class="btn primary" href="#capabilities">Explore Our Business Areas <span>→</span></a>
@@ -70,8 +71,12 @@
           <p>From food ingredients and private-label development to trade, export, agribusiness consulting and digital innovation, we bring connected thinking to every stage of the value chain.</p>
         </div>
       </div>
-      <div class="value-strip" aria-label="Mendado value proposition">
-        <span>Products</span><span>Capabilities</span><span>Markets</span><span>Expertise</span><span>Innovation</span>
+      <div class="value-strip" aria-label="Explore Mendado's value proposition">
+        <a class="value-link" href="#mnd"><strong>Products</strong><small>Ingredients and market-ready food solutions</small><span aria-hidden="true">→</span></a>
+        <a class="value-link" href="#capabilities"><strong>Capabilities</strong><small>Seven connected business areas</small><span aria-hidden="true">→</span></a>
+        <a class="value-link" href="#trade"><strong>Markets</strong><small>Trade, export and market development</small><span aria-hidden="true">→</span></a>
+        <a class="value-link" href="#why-mendado"><strong>Expertise</strong><small>Business, agricultural and specialist expertise</small><span aria-hidden="true">→</span></a>
+        <a class="value-link" href="#agrihub"><strong>Innovation</strong><small>Digital platforms and scalable solutions</small><span aria-hidden="true">→</span></a>
       </div>
     </section>
 
@@ -86,7 +91,7 @@
         <article class="ecosystem-card master reveal">
           <span class="ecosystem-number">01</span>
           <p class="brand-type">Master corporate brand</p>
-          <h3>Mendado</h3>
+          <img class="ecosystem-logo ecosystem-logo-master" src="../assets/concept-logo.webp" alt="MENDADO — Food, Business, Global">
           <p class="brand-message">Building Value. Connecting Markets. Creating Growth.</p>
           <p>The corporate platform connecting business areas, specialist expertise, strategic partnerships and market opportunities.</p>
         </article>
@@ -157,22 +162,30 @@
         <h2>From Trusted Origins.<br>To Wider Markets.</h2>
         <p>Mendado connects sourcing, commercial understanding and export-development support to help suitable products move toward regional and international opportunity.</p>
         <p>Our role is to coordinate market needs, capable suppliers, documentation readiness and commercial development—not to overstate capabilities or ownership.</p>
-        <div class="global-tags">
-          <span>Sourcing</span><span>Supply</span><span>Market Readiness</span><span>Export Development</span><span>Representation</span>
+        <div class="global-tags" role="tablist" aria-label="Trade, export and market-development services">
+          <button class="global-tag is-active" type="button" role="tab" aria-selected="true" aria-controls="trade-detail" data-title="Sourcing" data-description="Identifying and coordinating suitable origins and suppliers against agreed product, quality and commercial requirements.">Sourcing</button>
+          <button class="global-tag" type="button" role="tab" aria-selected="false" aria-controls="trade-detail" data-title="Supply" data-description="Connecting capable suppliers with business demand while supporting specifications, documentation and supply coordination.">Supply</button>
+          <button class="global-tag" type="button" role="tab" aria-selected="false" aria-controls="trade-detail" data-title="Market Readiness" data-description="Assessing product fit, documentation, packaging and commercial requirements before market entry.">Market Readiness</button>
+          <button class="global-tag" type="button" role="tab" aria-selected="false" aria-controls="trade-detail" data-title="Export Development" data-description="Supporting opportunity development, partner coordination and practical preparation for regional and international markets.">Export Development</button>
+          <button class="global-tag" type="button" role="tab" aria-selected="false" aria-controls="trade-detail" data-title="Representation" data-description="Connecting selected companies and portfolios with relevant market relationships and commercial opportunities.">Representation</button>
+        </div>
+        <div class="trade-detail" id="trade-detail" role="tabpanel" aria-live="polite" tabindex="0">
+          <h3>Sourcing</h3>
+          <p>Identifying and coordinating suitable origins and suppliers against agreed product, quality and commercial requirements.</p>
         </div>
         <a class="btn outline trade-cta" href="#contact">Start a Conversation</a>
       </div>
     </section>
 
-    <section class="agrihub-feature section light" id="agrihub">
+    <section class="agrihub-feature section dark" id="agrihub">
       <div class="agrihub-panel reveal">
         <div>
           <img class="feature-brand-logo agrihub-brand-logo" src="../assets/mendado-agrihub-logo.png" alt="Mendado AgriHub — Smart Agriculture. Stronger Communities.">
-          <p class="feature-label">Agricultural digital ecosystem</p>
+          <p class="feature-label">Integrated Digital Agriculture Ecosystem</p>
         </div>
         <div class="agrihub-copy">
-          <p>Mendado AgriHub is the digital agriculture component of the Mendado portfolio—a professional ecosystem designed to connect agricultural operations, trusted knowledge, market opportunities, expert services and community participation.</p>
-          <p>It is presented here as part of the corporate ecosystem, not as an eighth consulting service and not merely as a marketplace.</p>
+          <p>Mendado AgriHub is Mendado’s integrated digital agriculture ecosystem, designed to connect farm operations, trusted knowledge, market opportunities, expert services and professional communities in one place.</p>
+          <p>It brings together farmers, agronomists, companies, suppliers and market partners to support better decisions, stronger collaboration and more sustainable growth across the agricultural value chain.</p>
         </div>
       </div>
     </section>
@@ -237,8 +250,7 @@
 
   <footer>
     <div class="footer-brand">
-      <img src="../assets/mendado-logo.webp" alt="MENDADO" />
-      <p>FOOD · BUSINESS · GLOBAL</p>
+      <img src="../assets/concept-logo.webp" alt="MENDADO — Food, Business, Global" />
     </div>
     <div class="footer-center">
       <nav class="footer-links" aria-label="Footer navigation">
@@ -255,6 +267,6 @@
     </div>
   </footer>
 
-  <script src="../script.js?v=6-06"></script>
+  <script src="../script.js?v=6-08"></script>
 </body>
 </html>

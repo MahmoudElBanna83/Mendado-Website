@@ -19,6 +19,48 @@ if (toggle && nav) {
   });
 }
 
+const tradeTabs = Array.from(document.querySelectorAll('.global-tag[role="tab"]'));
+const tradeDetail = document.getElementById('trade-detail');
+
+if (tradeTabs.length && tradeDetail) {
+  const activateTradeTab = (tab, moveFocus = false) => {
+    tradeTabs.forEach((item, index) => {
+      if (!item.id) item.id = `trade-tab-${index + 1}`;
+      const isActive = item === tab;
+      item.classList.toggle('is-active', isActive);
+      item.setAttribute('aria-selected', String(isActive));
+      item.tabIndex = isActive ? 0 : -1;
+    });
+
+    tradeDetail.setAttribute('aria-labelledby', tab.id);
+    tradeDetail.querySelector('h3').textContent = tab.dataset.title;
+    tradeDetail.querySelector('p').textContent = tab.dataset.description;
+    if (moveFocus) tab.focus();
+  };
+
+  tradeTabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => activateTradeTab(tab));
+    tab.addEventListener('keydown', event => {
+      const isRtl = document.documentElement.dir === 'rtl';
+      const previousKey = isRtl ? 'ArrowRight' : 'ArrowLeft';
+      const nextKey = isRtl ? 'ArrowLeft' : 'ArrowRight';
+      let targetIndex = null;
+
+      if (event.key === previousKey) targetIndex = (index - 1 + tradeTabs.length) % tradeTabs.length;
+      if (event.key === nextKey) targetIndex = (index + 1) % tradeTabs.length;
+      if (event.key === 'Home') targetIndex = 0;
+      if (event.key === 'End') targetIndex = tradeTabs.length - 1;
+
+      if (targetIndex !== null) {
+        event.preventDefault();
+        activateTradeTab(tradeTabs[targetIndex], true);
+      }
+    });
+  });
+
+  activateTradeTab(tradeTabs.find(tab => tab.classList.contains('is-active')) || tradeTabs[0]);
+}
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {

@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&amp;family=Cormorant+Garamond:wght@500;600&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=6-06" />
+  <link rel="stylesheet" href="../styles.css?v=6-08" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">انتقلي إلى المحتوى</a>
@@ -48,8 +48,9 @@
       <div class="concept-shade" aria-hidden="true"></div>
       <div class="hero-content">
         <div class="hero-kicker">غذاء · أعمال · عالمي</div>
-        <h1 id="hero-title">من المكونات إلى<br> <em>الفرص العالمية.</em></h1>
-        <p>تربط مندادو بين المنتجات والأسواق والخبرات والابتكار الرقمي لصناعة فرص عملية في مجالات الأغذية والزراعة والأعمال الدولية.</p>
+        <h1 id="hero-title"><span>منظومة متكاملة</span><em>تطوّر الغذاء والزراعة.</em><span>تمكّن الأعمال وتصنع الفرص العالمية.</span></h1>
+        <p class="hero-slogan">نصنع القيمة. نربط الأسواق. نحقق النمو.</p>
+        <p class="hero-summary">تربط مندادو بين المنتجات والأسواق والخبرات والابتكار الرقمي لصناعة فرص عملية في مجالات الأغذية والزراعة والأعمال الدولية.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#capabilities">استكشف مجالات أعمالنا <span>←</span></a>
           <a class="btn outline" href="#contact">ابدأ محادثة</a>
@@ -68,8 +69,12 @@
           <p>من مكونات الأغذية وتطوير العلامات الخاصة إلى التجارة والتصدير والاستشارات الزراعية والابتكار الرقمي، نقدم رؤية مترابطة في كل مرحلة من سلسلة القيمة.</p>
         </div>
       </div>
-      <div class="value-strip" aria-label="القيمة التي تقدمها مندادو">
-        <span>المنتجات</span><span>القدرات</span><span>الأسواق</span><span>الخبرات</span><span>الابتكار</span>
+      <div class="value-strip" aria-label="استكشف القيمة التي تقدمها مندادو">
+        <a class="value-link" href="#mnd"><strong>المنتجات</strong><small>مكونات وحلول غذائية جاهزة للأسواق</small><span aria-hidden="true">←</span></a>
+        <a class="value-link" href="#capabilities"><strong>القدرات</strong><small>سبعة مجالات أعمال مترابطة</small><span aria-hidden="true">←</span></a>
+        <a class="value-link" href="#trade"><strong>الأسواق</strong><small>تجارة وتصدير وتنمية أسواق</small><span aria-hidden="true">←</span></a>
+        <a class="value-link" href="#why-mendado"><strong>الخبرات</strong><small>خبرات تجارية وزراعية ومتخصصة</small><span aria-hidden="true">←</span></a>
+        <a class="value-link" href="#agrihub"><strong>الابتكار</strong><small>منصات رقمية وحلول قابلة للتوسع</small><span aria-hidden="true">←</span></a>
       </div>
     </section>
 
@@ -83,7 +88,7 @@
         <article class="ecosystem-card master reveal">
           <span class="ecosystem-number">01</span>
           <p class="brand-type">العلامة المؤسسية الرئيسية</p>
-          <h3>مندادو</h3>
+          <img class="ecosystem-logo ecosystem-logo-master" src="../assets/concept-logo.webp" alt="MENDADO — غذاء، أعمال، عالمي">
           <p class="brand-message">نصنع القيمة. نربط الأسواق. نحقق النمو.</p>
           <p>المنصة المؤسسية التي تربط مجالات الأعمال والخبرات المتخصصة والشراكات الاستراتيجية والفرص السوقية.</p>
         </article>
@@ -147,20 +152,30 @@
         <h2>من مصادر موثوقة.<br>إلى أسواق أوسع.</h2>
         <p>تربط مندادو بين التوريد والفهم التجاري ودعم تنمية الصادرات لمساعدة المنتجات المناسبة على التوجه نحو الفرص الإقليمية والدولية.</p>
         <p>يتمثل دورنا في تنسيق احتياجات السوق والموردين القادرين والجاهزية المستندية والتطوير التجاري، دون المبالغة في القدرات أو الملكية.</p>
-        <div class="global-tags"><span>المصادر</span><span>التوريد</span><span>الجاهزية السوقية</span><span>تنمية الصادرات</span><span>التمثيل</span></div>
+        <div class="global-tags" role="tablist" aria-label="خدمات التجارة والتصدير وتنمية الأسواق">
+          <button class="global-tag is-active" type="button" role="tab" aria-selected="true" aria-controls="trade-detail" data-title="المصادر" data-description="تحديد وتنسيق المصادر والموردين المناسبين وفق متطلبات المنتج والجودة والشروط التجارية المتفق عليها.">المصادر</button>
+          <button class="global-tag" type="button" role="tab" aria-selected="false" aria-controls="trade-detail" data-title="التوريد" data-description="ربط الموردين القادرين باحتياجات الأعمال مع دعم المواصفات والمستندات وتنسيق عمليات التوريد.">التوريد</button>
+          <button class="global-tag" type="button" role="tab" aria-selected="false" aria-controls="trade-detail" data-title="الجاهزية السوقية" data-description="تقييم ملاءمة المنتج والمستندات والتعبئة والمتطلبات التجارية قبل دخول السوق.">الجاهزية السوقية</button>
+          <button class="global-tag" type="button" role="tab" aria-selected="false" aria-controls="trade-detail" data-title="تنمية الصادرات" data-description="دعم تطوير الفرص وتنسيق الشركاء والاستعداد العملي للأسواق الإقليمية والدولية.">تنمية الصادرات</button>
+          <button class="global-tag" type="button" role="tab" aria-selected="false" aria-controls="trade-detail" data-title="التمثيل" data-description="ربط الشركات ومحافظ المنتجات المختارة بعلاقات السوق والفرص التجارية ذات الصلة.">التمثيل</button>
+        </div>
+        <div class="trade-detail" id="trade-detail" role="tabpanel" aria-live="polite" tabindex="0">
+          <h3>المصادر</h3>
+          <p>تحديد وتنسيق المصادر والموردين المناسبين وفق متطلبات المنتج والجودة والشروط التجارية المتفق عليها.</p>
+        </div>
         <a class="btn outline trade-cta" href="#contact">ابدأ محادثة</a>
       </div>
     </section>
 
-    <section class="agrihub-feature section light" id="agrihub">
+    <section class="agrihub-feature section dark" id="agrihub">
       <div class="agrihub-panel reveal">
         <div>
           <img class="feature-brand-logo agrihub-brand-logo" src="../assets/mendado-agrihub-logo.png" alt="Mendado AgriHub — Smart Agriculture. Stronger Communities.">
-          <p class="feature-label">المنظومة الزراعية الرقمية</p>
+          <p class="feature-label">منظومة رقمية متكاملة للقطاع الزراعي</p>
         </div>
         <div class="agrihub-copy">
-          <p>Mendado AgriHub هو المكوّن الرقمي الزراعي ضمن محفظة مندادو، ومنظومة مهنية صممت لربط العمليات الزراعية والمعرفة الموثوقة والفرص السوقية وخدمات الخبراء والمشاركة المجتمعية.</p>
-          <p>يقدم هنا كجزء من المنظومة المؤسسية، وليس كخدمة استشارية ثامنة أو كسوق إلكتروني فقط.</p>
+          <p>تمثل Mendado AgriHub المنظومة الرقمية المتكاملة للقطاع الزراعي ضمن منظومة مندادو، وقد صُممت لربط العمليات الزراعية والمعرفة الموثوقة والفرص السوقية وخدمات الخبراء والمجتمعات المهنية في مكان واحد.</p>
+          <p>وتجمع المزارعين والمهندسين الزراعيين والشركات والموردين وشركاء السوق لدعم اتخاذ قرارات أفضل، وتعزيز التعاون، وتحقيق نمو أكثر استدامة عبر سلسلة القيمة الزراعية.</p>
         </div>
       </div>
     </section>
@@ -218,7 +233,7 @@
   </main>
 
   <footer>
-    <div class="footer-brand"><img src="../assets/mendado-logo.webp" alt="مندادو" /><p>غذاء · أعمال · عالمي</p></div>
+    <div class="footer-brand"><img src="../assets/concept-logo.webp" alt="MENDADO — غذاء، أعمال، عالمي" /></div>
     <div class="footer-center">
       <nav class="footer-links" aria-label="روابط التذييل">
         <a href="#about">من نحن</a><a href="#ecosystem">منظومتنا</a><a href="#capabilities">مجالات الأعمال</a>
@@ -231,6 +246,6 @@
       <small>© <span id="year"></span> MENDADO. جميع الحقوق محفوظة.</small>
     </div>
   </footer>
-  <script src="../script.js?v=6-06"></script>
+  <script src="../script.js?v=6-08"></script>
 </body>
 </html>
