@@ -36,7 +36,8 @@
 - `V6-01` was separately authorized and has been implemented on `feat/v6-recovery`.
 - `V6-02` was separately authorized and has been implemented on `feat/v6-recovery`.
 - `V6-03` through `V6-06` were authorized as pre-publication completion work and implemented on `feat/v6-recovery`.
-- `V6-07` remains the final approval gate. Merge and publication remain unauthorized.
+- `V6-07` real-browser visual and interaction verification is complete on `feat/v6-recovery`.
+- The branch is a technically reviewed pre-publication candidate. Final hosting/domain confirmation, a device-level prepared-email handoff check, and explicit owner approval remain required before merge or publication.
 
 Completed in `V6-02`:
 
@@ -55,6 +56,7 @@ Completed after `V6-02`:
 - `V6-04`: added explicit English and Arabic paths, language navigation, Arabic content and RTL behavior.
 - `V6-05`: made the inquiry form functional through a prepared-email workflow addressed to `Development@mendado.com`, without adding a third-party processor or secret.
 - `V6-06`: completed structural, asset, link, language, JavaScript and diff validation; recorded the required final real-browser review.
+- `V6-07`: completed bilingual real-browser review at 1440, 1024, 768, 390 and 320 pixels; verified navigation, RTL/LTR behavior, assets, overflow and inquiry-form validation; corrected the medium-width Hero image position without modifying the approved asset.
 
 Still prohibited without final approval:
 
