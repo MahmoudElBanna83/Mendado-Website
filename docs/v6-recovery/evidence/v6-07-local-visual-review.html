@@ -27,25 +27,8 @@
       document.querySelectorAll('iframe').forEach(frame => frame.hidden = frame !== selected);
       selected.style.opacity = '1';
       selected.style.pointerEvents = 'auto';
-
-      const targetWidth = Number(viewport);
-      let fitAttempts = 0;
-      const fitViewport = () => {
-        const renderedWidth = selected.contentWindow.innerWidth;
-        const frameWidth = selected.getBoundingClientRect().width;
-        const correctedWidth = frameWidth + targetWidth - renderedWidth;
-
-        selected.style.width = `${correctedWidth}px`;
-        document.documentElement.style.minWidth = `${correctedWidth}px`;
-        document.body.style.minWidth = `${correctedWidth}px`;
-        document.documentElement.dataset.reviewViewport = selected.contentWindow.innerWidth;
-
-        fitAttempts += 1;
-        if (fitAttempts < 20) setTimeout(fitViewport, 250);
-      };
-
-      selected.addEventListener('load', () => setTimeout(fitViewport, 250), { once: true });
-      setTimeout(fitViewport, 250);
+      document.documentElement.style.minWidth = `${viewport}px`;
+      document.body.style.minWidth = `${viewport}px`;
     }
   </script>
 </body>
