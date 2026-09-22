@@ -263,6 +263,7 @@ html[dir="rtl"] .rfq-form input,html[dir="rtl"] .rfq-form select,html[dir="rtl"]
   .main-nav{gap:16px}.main-nav a{font-size:14px}
   .header-cta{padding:14px 17px;font-size:12px}
   .concept-hero{padding-left:36px;padding-right:36px}
+  .concept-hero-image img{object-position:right center}
   .solutions-band,.products-concept{padding-left:36px;padding-right:36px}
   .capability-grid{grid-template-columns:repeat(2,1fr)}
   .agrihub-panel{grid-template-columns:.9fr 1fr;padding:38px;gap:28px}
