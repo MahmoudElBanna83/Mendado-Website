@@ -29,6 +29,7 @@
       selected.style.pointerEvents = 'auto';
 
       const targetWidth = Number(viewport);
+      let fitAttempts = 0;
       const fitViewport = () => {
         const renderedWidth = selected.contentWindow.innerWidth;
         const frameWidth = selected.getBoundingClientRect().width;
@@ -38,10 +39,15 @@
         document.documentElement.style.minWidth = `${correctedWidth}px`;
         document.body.style.minWidth = `${correctedWidth}px`;
         document.documentElement.dataset.reviewViewport = selected.contentWindow.innerWidth;
+
+        fitAttempts += 1;
+        if (fitAttempts < 4 && selected.contentWindow.innerWidth !== targetWidth) {
+          requestAnimationFrame(fitViewport);
+        }
       };
 
-      selected.addEventListener('load', fitViewport, { once: true });
-      if (selected.contentDocument.readyState === 'complete') fitViewport();
+      selected.addEventListener('load', () => requestAnimationFrame(fitViewport), { once: true });
+      if (selected.contentDocument.readyState === 'complete') requestAnimationFrame(fitViewport);
     }
   </script>
 </body>
