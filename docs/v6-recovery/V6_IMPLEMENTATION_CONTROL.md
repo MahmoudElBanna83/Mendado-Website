@@ -1,0 +1,84 @@
+# MENDADO Website V6 Recovery Implementation Control
+
+## Governing baseline
+
+- Repository: `MahmoudElBanna83/Mendado-Website`
+- Protected source baseline: `680f422f5d81b73cb525cd92a44ad7518835db10`
+- Recovery branch: `feat/v6-recovery`
+- V6 is an evolution of V5, not a redesign from scratch.
+- No direct implementation changes may be made on `main`.
+
+## Approved V6 direction
+
+- Preserve the V5 Hero image and recognizable composition.
+- Use the owner-approved English Hero headline: “An Integrated Ecosystem. Advancing Food and Agriculture. Enabling Business. Creating Global Opportunities.”
+- Use the owner-approved Arabic Hero headline: “منظومة متكاملة. تطوّر الغذاء والزراعة. تمكّن الأعمال وتصنع الفرص العالمية.”
+- Retain the corporate message directly beneath the Hero headline: “Building Value. Connecting Markets. Creating Growth.” / “نصنع القيمة. نربط الأسواق. نحقق النمو.”
+- Use approved Mendado gold `#E8C67A`.
+- Present Mendado, MND by Mendado, and Mendado AgriHub as one connected ecosystem.
+- Retain the seven approved business areas.
+- Implement English and Arabic with correct LTR/RTL behavior.
+- Use only verified production logo assets.
+- Describe manufacturing through qualified partners; do not imply an owned factory currently exists.
+
+## Controlled stages
+
+1. `V6-00` — Baseline protection and implementation controls.
+2. `V6-01` — Structural recovery.
+3. `V6-02` — Architecture and content.
+4. `V6-03` — Unified identity integration.
+5. `V6-04` — English and Arabic implementation.
+6. `V6-05` — Inquiry functionality.
+7. `V6-06` — QA and private review.
+8. `V6-07` — Approval gate.
+9. `V6-08` — Owner-approved publication-candidate refinement.
+
+## Current stage status
+
+- `V6-00` is complete.
+- `V6-01` was separately authorized and has been implemented on `feat/v6-recovery`.
+- `V6-02` was separately authorized and has been implemented on `feat/v6-recovery`.
+- `V6-03` through `V6-06` were authorized as pre-publication completion work and implemented on `feat/v6-recovery`.
+- `V6-07` real-browser visual and interaction verification is complete on `feat/v6-recovery`.
+- `V6-08` owner-approved bilingual visual, content and interaction refinements are implemented and verified on `feat/v6-recovery`.
+- The branch is a technically reviewed pre-publication candidate. Final hosting/domain confirmation, a device-level prepared-email handoff check, and explicit owner approval remain required before merge or publication.
+
+Completed in `V6-02`:
+
+- Preserve the approved V6-01 foundation, Hero, navigation, responsive logo and gold token.
+- Establish the approved ten-part homepage hierarchy.
+- Present Mendado, MND by Mendado and Mendado AgriHub as one connected ecosystem using text headings only.
+- Add the seven approved business areas and exact approved brand messages.
+- Describe manufacturing as coordinated through qualified partners.
+- Align navigation and calls to action with the V6 structure.
+- Keep the inquiry form presentational and unconnected.
+- Add only the verification documentation and evidence required for `V6-02`.
+
+Completed after `V6-02`:
+
+- `V6-03`: integrated separate MND and Mendado AgriHub identity assets derived from the approved brand-family board.
+- `V6-04`: added explicit English and Arabic paths, language navigation, Arabic content and RTL behavior.
+- `V6-05`: made the inquiry form functional through a prepared-email workflow addressed to `Development@mendado.com`, without adding a third-party processor or secret.
+- `V6-06`: completed structural, asset, link, language, JavaScript and diff validation; recorded the required final real-browser review.
+- `V6-07`: completed bilingual real-browser review at 1440, 1024, 768, 390 and 320 pixels; verified navigation, RTL/LTR behavior, assets, overflow and inquiry-form validation; corrected the medium-width Hero image position without modifying the approved asset.
+- `V6-08`: adopted the broader corporate Hero message, aligned the English and Arabic mobile Hero compositions, converted the corporate value tiles and trade topics into meaningful interactive navigation/content, added the approved Mendado corporate logo to the ecosystem, improved AgriHub contrast and copy, and replaced the legacy footer mark with the approved corporate identity.
+
+Still prohibited without final approval:
+
+- Merge or rebase.
+- Deploy or publish.
+- Connect or change a domain.
+- Modify GitHub Pages.
+- Transfer repository ownership.
+
+## Stop conditions for later stages
+
+Stop and report before implementation if:
+
+- `main` advances unexpectedly.
+- The authorized base differs.
+- Approved assets cannot be verified.
+- A requested change exceeds the specifically authorized stage.
+- Publishing, deployment, Pages, domain, or ownership changes would be required.
+
+Every later stage requires separate explicit approval and evidence.
