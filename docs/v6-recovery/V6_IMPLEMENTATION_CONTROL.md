@@ -11,7 +11,9 @@
 ## Approved V6 direction
 
 - Preserve the V5 Hero image and recognizable composition.
-- Preserve the exact Hero headline: “From Ingredients to Global Opportunities.”
+- Use the owner-approved English Hero headline: “An Integrated Ecosystem. Advancing Food and Agriculture. Enabling Business. Creating Global Opportunities.”
+- Use the owner-approved Arabic Hero headline: “منظومة متكاملة. تطوّر الغذاء والزراعة. تمكّن الأعمال وتصنع الفرص العالمية.”
+- Retain the corporate message directly beneath the Hero headline: “Building Value. Connecting Markets. Creating Growth.” / “نصنع القيمة. نربط الأسواق. نحقق النمو.”
 - Use approved Mendado gold `#E8C67A`.
 - Present Mendado, MND by Mendado, and Mendado AgriHub as one connected ecosystem.
 - Retain the seven approved business areas.
@@ -29,6 +31,7 @@
 6. `V6-05` — Inquiry functionality.
 7. `V6-06` — QA and private review.
 8. `V6-07` — Approval gate.
+9. `V6-08` — Owner-approved publication-candidate refinement.
 
 ## Current stage status
 
@@ -37,6 +40,7 @@
 - `V6-02` was separately authorized and has been implemented on `feat/v6-recovery`.
 - `V6-03` through `V6-06` were authorized as pre-publication completion work and implemented on `feat/v6-recovery`.
 - `V6-07` real-browser visual and interaction verification is complete on `feat/v6-recovery`.
+- `V6-08` owner-approved bilingual visual, content and interaction refinements are implemented and verified on `feat/v6-recovery`.
 - The branch is a technically reviewed pre-publication candidate. Final hosting/domain confirmation, a device-level prepared-email handoff check, and explicit owner approval remain required before merge or publication.
 
 Completed in `V6-02`:
@@ -57,6 +61,7 @@ Completed after `V6-02`:
 - `V6-05`: made the inquiry form functional through a prepared-email workflow addressed to `Development@mendado.com`, without adding a third-party processor or secret.
 - `V6-06`: completed structural, asset, link, language, JavaScript and diff validation; recorded the required final real-browser review.
 - `V6-07`: completed bilingual real-browser review at 1440, 1024, 768, 390 and 320 pixels; verified navigation, RTL/LTR behavior, assets, overflow and inquiry-form validation; corrected the medium-width Hero image position without modifying the approved asset.
+- `V6-08`: adopted the broader corporate Hero message, aligned the English and Arabic mobile Hero compositions, converted the corporate value tiles and trade topics into meaningful interactive navigation/content, added the approved Mendado corporate logo to the ecosystem, improved AgriHub contrast and copy, and replaced the legacy footer mark with the approved corporate identity.
 
 Still prohibited without final approval:
 
