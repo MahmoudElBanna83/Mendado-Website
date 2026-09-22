@@ -42,12 +42,12 @@
 
         fitAttempts += 1;
         if (fitAttempts < 4 && selected.contentWindow.innerWidth !== targetWidth) {
-          requestAnimationFrame(fitViewport);
+          setTimeout(fitViewport, 100);
         }
       };
 
-      selected.addEventListener('load', () => requestAnimationFrame(fitViewport), { once: true });
-      if (selected.contentDocument.readyState === 'complete') requestAnimationFrame(fitViewport);
+      selected.addEventListener('load', () => setTimeout(fitViewport, 250), { once: true });
+      if (selected.contentDocument.readyState === 'complete') setTimeout(fitViewport, 250);
     }
   </script>
 </body>
